@@ -11,7 +11,7 @@ int main () {
   int new = 0; //are they on a new number
   int len = 0; //length of the sequence
   int terms[9]; //terms of the sequence
-  while (len < 9) {
+  while (len < 10) {
     c = getchar();
     if (c>='0' && c<='9') { //if integer
       putchar(c);
@@ -53,21 +53,24 @@ int main () {
   }
 
   //Prints the variables
-  printf("\nd = %i\n", diff); //prints value of D (difference)
-  printf("a = %i\n", terms[0]); //prints value of A (starting term)
+  printf("\nd = %i (difference)\n", diff); //prints value of D (difference)
+  printf("a = %i (starting term)\n", terms[0]); //prints value of A (starting term)
 
   //Gets the number to subtract N by
   int sub = diff - terms[0];
 
-  //Prints the expression for the Nth term
-  if (sub == 0) {
-    printf("Tn = %in", diff);
+  //Prints difference minus first term
+  printf("Tn=");
+  if (terms[0]-diff != 0) {
+    printf("%i", terms[0]-diff);
   }
-  if (sub < 0) {
-    printf("Tn = %in+%i", diff, -1*sub);
+
+  //Prints N
+  if (diff >= 0) {
+    printf("+%in", diff);
   }
-  if (sub > 0) {
-    printf("Tn = %in-%i", diff, sub);
+  else {
+    printf("%in", diff);
   }
 
   //Goes to a new line

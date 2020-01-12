@@ -1,7 +1,7 @@
 # Linear-Equation-Solver
 This C script is intended to solve linear/arithmetic (sequences with a constatn difference) sequences.
-*It does this by getting the formula for the Nth term of the sequence.
-*It supports any positive or negative whole numbers.
+* It does this by getting the formula for the Nth term of the sequence.
+* It supports any positive or negative whole numbers.
 
 # Example Usage
 '''

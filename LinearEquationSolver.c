@@ -25,18 +25,15 @@ int main () {
     }
     if (c==' ' && new==1) { //if new number
       printf(", ");
-      terms[len] = term;
+      if (minus == 1) {terms[len] = term*-1;}
+      else {terms[len] = term;}
       term = 0;
       new = 0;
       len++;
     }
     if (c=='\n') { //if enter pressed
-      if (minus == 1) {
-        terms[len] = term*-1;
-      }
-      else {
-        terms[len] = term;
-      }
+      if (minus == 1) {terms[len] = term*-1;}
+      else {terms[len] = term;}
       term = 0;
       minus = 0;
       new = 0;

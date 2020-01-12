@@ -7,10 +7,10 @@ int main () {
 
   //Gets all terms in a list
   char c; //user input
-  int term = 0; //current term
-  int minus = 0; //is term a minus
-  int new = 0; //are they on a new number
-  int len = 0; //length of the sequence
+  short int term = 0; //current term
+  short int minus = 0; //is term a minus
+  short int new = 0; //are they on a new number
+  short int len = 0; //length of the sequence
   int terms[9]; //terms of the sequence
   while (len < 10) {
     c = getchar();

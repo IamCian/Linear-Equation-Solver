@@ -8,6 +8,7 @@ int main () {
   //Gets all terms in a list
   char c; //user input
   int term = 0; //current term
+  int minus = 0; //is term a minus
   int new = 0; //are they on a new number
   int len = 0; //length of the sequence
   int terms[9]; //terms of the sequence
@@ -18,6 +19,10 @@ int main () {
       term = (term * 10) + (c - '0');
       new = 1;
     }
+    if (c == '-') { //if number is minus
+      printf("-");
+      minus = 1;
+    }
     if (c==' ' && new==1) { //if new number
       printf(", ");
       terms[len] = term;
@@ -26,8 +31,14 @@ int main () {
       len++;
     }
     if (c=='\n') { //if enter pressed
-      terms[len] = term;
+      if (minus == 1) {
+        terms[len] = term*-1;
+      }
+      else {
+        terms[len] = term;
+      }
       term = 0;
+      minus = 0;
       new = 0;
       len++;
       break;
@@ -55,9 +66,6 @@ int main () {
   //Prints the variables
   printf("\nd = %i (difference)\n", diff); //prints value of D (difference)
   printf("a = %i (starting term)\n", terms[0]); //prints value of A (starting term)
-
-  //Gets the number to subtract N by
-  int sub = diff - terms[0];
 
   //Prints difference minus first term
   printf("Tn=");

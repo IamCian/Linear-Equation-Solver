@@ -1,12 +1,12 @@
 # Linear Equation Solver
 This C script is intended to solve linear/arithmetic (sequences with a constatn difference) sequences.
 * It does this by getting the formula for the Nth term of the sequence.
-* It uses the formula: Tn = a + (n - 1)d
+* It uses the formula: Tn = a + (n - 1)d  
 (a=starting term,  d=difference)
 * It supports any positive or negative whole numbers.
 
 # Example Usage
-```sh
+```console
 $ cc LinearEquationSolver.c
 $ ./a.out
 Please type the linear sequence with a space in-between each term and then press enter

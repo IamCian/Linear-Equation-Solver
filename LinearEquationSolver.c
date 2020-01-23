@@ -21,7 +21,7 @@ int main (int argc, char* argv[]) {
   //Gets difference
   int diff = terms[1] - terms[0]; //difference between terms
 
-  //Stops if it's not linear
+  //Stops if difference isn't constant
   for (i = 0; i < argc-2; i++){
     if (terms[i+1] - terms[i] != diff) {
       printf("\nThis is not a linear sequence as the first difference is NOT constant!\n");
@@ -33,18 +33,11 @@ int main (int argc, char* argv[]) {
   printf("\nd = %i (difference)\n", diff); //prints value of D (difference)
   printf("a = %i (starting term)\n", terms[0]); //prints value of A (starting term)
 
-  //Prints difference minus first term
-  printf("Tn=");
+  //Prints the equation
+  printf("Tn=%in", diff); //Prints N
   if (terms[0]-diff != 0) {
-    printf("%i", terms[0]-diff);
-  }
-
-  //Prints N
-  if (diff >= 0) {
-    printf("+%in", diff);
-  }
-  else {
-    printf("%in", diff);
+    if (terms[0]-diff >= 0){printf("+");}
+    printf("%i", terms[0]-diff); //prints difference minus the first term
   }
 
   //Goes to a new line

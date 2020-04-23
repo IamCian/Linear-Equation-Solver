@@ -1,15 +1,17 @@
-# Linear Equation Solver
-This C script is intended to solve linear sequences by getting the formula for the Nth term.
+# Lineq
+Gets an equation from a linear sequence in the form Tn=a+(n-1)d.
 
-# Method
-It gets the Nth term by using the formula: Tn = a + (n - 1)d  
-(a=starting term,  d=difference)
-
-# Example Usage
+# Usage
 ```console
-$ ./a.out 13 9 5 1 -3 -7
-13 9 5 1 -3 -7
-d = -4 (difference)
-a = 13 (starting term)
+$ lineq --help
+Usage: lineq [-w show_workings] TERMS
+Get equation from a linear sequence in the form Tn=a+(n-1)d
+Example: lineq 13 9 5 1 -3 -7
+$ lineq 13 9 5 1 -3 -7
+Tn=-4n+17
+$ lineq -w 13 9 5 1 -3 -7
+Tn=a+(n-1)d
+d=-4 (difference)
+a=13 (starting term)
 Tn=-4n+17
 ```

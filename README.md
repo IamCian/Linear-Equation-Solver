@@ -23,10 +23,10 @@ Tn=-4n+17
 # Installation
 Installs to __/usr/local/bin/lineq__ by default
 ```console
-git clone https://github.com/IamCian/lineq.git lineq
-cd lineq
-make
-sudo make install
+$ git clone https://github.com/IamCian/lineq.git lineq
+$ cd lineq
+$ make
+$ sudo make install
 ```
 **Removal**
 ```console

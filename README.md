@@ -30,9 +30,9 @@ $ sudo make install
 ```
 **Removal**
 ```console
-sudo make uninstall
+$ sudo make uninstall
 ```
 or
 ```console
-sudo rm /usr/local/bin/lineq
+$ sudo rm /usr/local/bin/lineq
 ```

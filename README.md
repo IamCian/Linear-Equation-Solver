@@ -1,5 +1,5 @@
-# Lineq
-Gets an equation from a linear sequence in the form Tn=a+(n-1)d.
+# Lineq (Linear Sequence)
+Gets the Nth term for a linear sequence.
 
 # License
 Licensed under the [MIT License](https://github.com/IamCian/lineq/blob/master/LICENSE).
@@ -9,7 +9,7 @@ See [https://choosealicense.com/licenses/mit/](https://choosealicense.com/licens
 ```console
 $ lineq --help
 Usage: lineq [-w show_workings] TERMS
-Get equation from a linear sequence in the form Tn=a+(n-1)d
+Get the Nth term for a linear sequence
 Example: lineq -w 13 9 5 1 -3 -7
 $ lineq 13 9 5 1 -3 -7
 Tn=-4n+17

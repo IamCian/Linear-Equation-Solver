@@ -23,7 +23,7 @@ int main (int argc, char* argv[]) {
       case 'w': workings=1;continue;
       default:
         if (strcmp(argv[i], "--help")==0){  /* help option */
-          printf("Usage: lineq [-w show_workings] TERMS\nGet equation from a linear sequence in the form Tn=a+(n-1)d\nExample: lineq -w 13 9 5 1 -3 -7\n"); return 0;
+          printf("Usage: lineq [-w show_workings] TERMS\nGet the Nth term for a linear sequence\nExample: lineq -w 13 9 5 1 -3 -7\n"); return 0;
         }
         else {printf("Usage: lineq [-w show_workings] TERMS\nTry 'lineq --help' for more information.\n"); return 1;} /* unknown argument */
     }
